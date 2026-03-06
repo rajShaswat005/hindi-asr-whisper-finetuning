@@ -1,0 +1,45 @@
+# Training configuration for Whisper-Small Hindi ASR fine-tuning
+model:
+  name: "openai/whisper-small"
+  language: "hindi"
+  task: "transcribe"
+
+training:
+  output_dir: "./whisper-small-hindi"
+  num_train_epochs: 3
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 8
+  warmup_steps: 500
+  gradient_accumulation_steps: 1
+  learning_rate: 1.0e-5
+  weight_decay: 0.0
+  lr_scheduler_type: "linear"
+  save_steps: 1000
+  eval_steps: 1000
+  logging_steps: 25
+  save_total_limit: 2
+  load_best_model_at_end: true
+  metric_for_best_model: "wer"
+  greater_is_better: false
+  predict_with_generate: true
+  generation_max_length: 225
+  fp16: true
+  push_to_hub: false
+
+data:
+  max_audio_length_seconds: 30
+  sample_rate: 16000
+  cache_dir: "./data_cache"
+  missing_urls_log: "./missing_urls.jsonl"
+
+evaluation:
+  fleurs_dataset: "google/fleurs"
+  fleurs_language: "hi_in"
+  fleurs_split: "test"
+  batch_size: 8
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  max_audio_length_seconds: 30
+  sample_rate: 16000

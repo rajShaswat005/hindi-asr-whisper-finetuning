@@ -1,0 +1,44 @@
+# Core ML / Audio
+torch>=2.0.0
+torchaudio>=2.0.0
+transformers>=4.36.0
+datasets>=2.14.0
+accelerate>=0.24.0
+evaluate>=0.4.0
+
+# Audio processing
+librosa>=0.10.0
+soundfile>=0.12.0
+pydub>=0.25.1
+
+# Text / NLP utilities
+jiwer>=3.0.0
+regex>=2023.6.3
+unicodedata2>=15.0.0
+
+# Data handling
+requests>=2.31.0
+urllib3>=2.0.0
+tenacity>=8.2.0
+aiohttp>=3.9.0
+aiofiles>=23.2.0
+
+# HuggingFace extras
+huggingface_hub>=0.19.0
+
+# API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Utilities
+numpy>=1.24.0
+pandas>=2.0.0
+tqdm>=4.66.0
+pyyaml>=6.0
+jsonlines>=3.1.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+httpx>=0.25.0
