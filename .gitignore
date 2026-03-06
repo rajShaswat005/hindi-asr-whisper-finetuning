@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.coveragerc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# HuggingFace cache / model downloads
+data_cache/
+*.arrow
+*.parquet
+
+# Trained model checkpoints (exclude large binary files)
+whisper-small-hindi/
+
+# Logs
+missing_urls.jsonl
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
