@@ -108,7 +108,7 @@ hindi-asr-whisper-finetuning/
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/hindi-asr-whisper-finetuning.git
+git clone https://github.com/rajShaswat005/hindi-asr-whisper-finetuning
 cd hindi-asr-whisper-finetuning
 2. Install Dependencies
 pip install -r requirements.txt
