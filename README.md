@@ -29,18 +29,7 @@ This project solves the **Josh Talks AI Researcher Intern Task (Speech & Audio)*
 - ✅ FastAPI-based **inference prototype (production-ready)**
 - ✅ Fully reproducible pipeline (Colab-compatible)
 
----
-
-## 📊 Results (Fill After Training)
-
-| Model                  | Dataset        | WER ↓ |
-|-----------------------|---------------|------|
-| Whisper-small (base)  | FLEURS Hindi  | XX.XX% |
-| Fine-tuned model      | FLEURS Hindi  | YY.YY% |
-
-**Improvement:** ↓ Z.ZZ%
-
----
+   
 
 ## 🏗️ Project Architecture
 
